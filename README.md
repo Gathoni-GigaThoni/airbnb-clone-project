@@ -50,7 +50,7 @@ GET /reviews/{review_id}/ - Retrieve a specific review
 PUT /reviews/{review_id}/ - Update a specific review
 DELETE /reviews/{review_id}/ - Delete a specific review
 
-# 🛠️ Features Breakdown
+# 🛠️ Feature Breakdown
 1. API Documentation
 OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
 Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
@@ -73,3 +73,54 @@ Features: Post and manage reviews for properties.
 7. Database Optimizations
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
+
+# CI/CD Pipeline
+CI/CD stands for Continuous Integration/Continuous Deployment. These are automated workflows that streamline the software development process by automatically building, testing, and deploying code changes whenever developers push updates to the repository.
+Why CI/CD is Important for AirBnB Clone:
+Quality Assurance: Automatically runs tests on every code change, catching bugs before they reach production
+Faster Deployment: Eliminates manual deployment steps, reducing time from development to live application
+Consistency: Ensures the same deployment process every time, reducing human error
+Scalability: As the booking platform grows, automated processes handle increased complexity
+Team Collaboration: Multiple developers can work simultaneously without conflicts, as changes are automatically integrated and tested
+
+Recommended Tools for AirBnB Clone:
+CI/CD Platforms:
+GitHub Actions - Native integration with GitHub repositories, free for public repos
+GitLab CI/CD - Built-in pipeline functionality with GitLab
+Jenkins - Open-source automation server with extensive plugin ecosystem
+
+Containerization & Deployment:
+Docker - Containerizes the application for consistent environments
+Docker Compose - Manages multi-container applications (frontend, backend, database)
+Kubernetes - Orchestrates containers in production environments
+
+Cloud Deployment:
+AWS CodePipeline - Amazon's CI/CD service with EC2/ECS integration
+
+# 🔐 API Security
+Security Measures
+Authentication & Authorization
+JWT tokens for secure session management
+OAuth 2.0 integration (Google, Facebook)
+Multi-factor Authentication (2FA)
+Role-based Access Control (Guest/Host/Admin permissions)
+Bcrypt password hashing with salt
+
+Data Protection
+HTTPS/TLS encryption for all communications
+Database encryption for sensitive data
+Input validation and sanitization
+CORS configuration
+Environment variable security
+
+API Security
+Rate limiting to prevent abuse
+Request throttling by user tier
+SQL injection prevention
+XSS protection
+Secure API key management
+
+Payment Security
+PCI DSS compliance via Stripe/PayPal
+Payment tokenization
+Secure webhook validation
