@@ -17,7 +17,7 @@ QA Engineer: Ensures the backend functionalities are thoroughly tested and meet 
 # 📈 API Documentation Overview
 REST API: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
 GraphQL API: Provides a flexible query language for retrieving and manipulating data.
-# 📌 Project Endpoints
+# 📌 Database Design
 REST API Endpoints
 # Users
 GET /users/ - List all users
